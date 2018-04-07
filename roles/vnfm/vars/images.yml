@@ -1,0 +1,7 @@
+---
+
+images:
+  VNFM:
+    name: "VNFM-71510"
+    url: "https://download.cirros-cloud.net/0.4.0/cirros-0.4.0-arm-disk.img"
+    file: "cirros-0.4.0-arm-disk.img"

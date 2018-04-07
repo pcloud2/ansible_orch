@@ -1,0 +1,21 @@
+---
+# vars file for vnfm
+
+resources: "{{ playbook_dir }}/roles/vnfm/files/"
+
+auth: {
+  auth_url: "http://10.69.9.41:5000/v3",
+  username: "vnfm",
+  password: "vnfm",
+  project_name: "VNFM_Antiaff",
+  domain_name: "Default"
+}
+
+
+#auth: {
+#  auth_url: "http://10.69.9.41:5000/v3",
+#  username: "vnfm",
+#  password: "vnfm",
+#  project_name: "VNFM_Antiaff"
+#}
+

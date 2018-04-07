@@ -1,0 +1,8 @@
+---
+
+- name: Apply Upload Image Role
+  gather_facts: no
+  hosts: local
+
+  roles:
+    - vnfm
