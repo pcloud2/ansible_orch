@@ -1,0 +1,14 @@
+---
+
+# Tasks for Volume
+
+- include_vars: "{{ playbook_dir }}/roles/vnfm/vars/main.yml"
+
+- name: Create  Bootable volume from Image
+  os_volume:
+    state: present
+    auth: "{{ auth }}"
+    size: "{{ app_env.size }}"
+    display_name: "{{ item.value.name }}-Vol"
+    image: "{{ item.value.name }}"
+  with_dict: "{{ images }}"

@@ -6,3 +6,4 @@
 
   roles:
     - vnfm
+    - volume

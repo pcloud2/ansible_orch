@@ -1,8 +1,6 @@
 ---
 # tasks file for vnfm
 
-#- include_vars: images.yml
-
 - name: Downloading Image from HTTP Server
   get_url:
     url: "{{ item.value.url }}"
